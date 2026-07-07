@@ -38,11 +38,11 @@ A modern GPA calculator for Pakistani universities built with **HTML, CSS, and J
 ```
 UniGPA-Pakistan/
 │
-├── index.html
-├── style.css
-├── script.js
 ├── Img/
-└── README.md
+├── README.md
+├── index.htm
+├── script.js
+└── style.css
 ```
 
 # Future Improvements
