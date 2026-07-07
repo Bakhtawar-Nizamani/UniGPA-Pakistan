@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniGPA Pakistan</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="./Img/pakistan.webp">
+
+</head>
+
+<body>
+
+    <!--Mode-->
+    <div class="theme">
+        <p>Choose your preferred theme.</p>
+        <div class="buttons">
+            <button class="light-btn">Light Mode </button>
+            <button class="dark-btn">Dark Mode</button>
+        </div>
+    </div>
+
+
+    <!-- Start Screen -->
+    <div class="container" id="startScreen">
+        <h1>UniGPA <span style="color: #01411C;">Pakistan</span></h1>
+        <p id="containerPara">Calculate your GPA</p>
+
+        <label for="ChooseUni" class="text-uni"><strong>Select your university</strong></label>
+        <select name="selectUni" id="ChooseUni">
+            <option value="Uni">Choose your university</option>
+            <option value="NUST">NUST</option>
+            <option value="FAST">FAST</option>
+            <option value="COMSATS">COMSATS</option>
+            <option value="MUET">MUET</option>
+            <option value="NED">NED</option>
+            <option value="KU">University of Karachi</option>
+            <option value="PU">University of the Punjab</option>
+            <option value="BahriaUni">Bahria University</option>
+            <option value="SZABIST">SZABIST</option>
+            <option value="IBA-Karachi">IBA Karachi</option>
+            <option value="Air-Uni">Air University</option>
+            <option value="SU">University of Sindh</option>
+        </select>
+    </div>
+
+    <!-- Input Screen -->
+    <div class="container hidden" id="inputScreen">
+        <h2 class="uniName"></h2>
+
+        <div class="inputs">
+            <div class="course course1">
+                <input type="text" class="courseName" placeholder="Course 1" required style="text-align: center;">
+                <input type="number" class="creditHours" placeholder="Credit Hours" required
+                    style="text-align: center;">
+                <div class="grade">
+                    <select name="grade" id="selectGrade" class="gradeSelect">
+
+                    </select>
+                </div>
+                <button class="addBtn">Add Course</button>
+            </div>
+        </div>
+        <button class="calculate-gpa">
+            Calculate GPA
+        </button>
+    </div>
+
+    <!-- Result Screen -->
+    <div class="container hidden" id="resultScreen">
+        <h2>Semester GPA</h2>
+        <div class="academicSummary">
+            <h3>Academic Summary</h3>
+            <h4 class="totalSub"></h4>
+            <h4 class="totalCreditHours"></h4>
+            <h4 class="totalQualityPoints"></h4>
+            <h4 class="semesterGPA"></h4>
+        </div>
+        <button class="reset-btn">
+            Calculate Again
+        </button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

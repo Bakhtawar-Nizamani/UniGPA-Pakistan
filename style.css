@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 45%;
+    background-color: darkcyan;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px darkcyan;
+    text-align: center;
+    padding: 30px;
+    border: 5px solid darkcyan;
+}
+
+#inputScreen {
+    height: auto;
+}
+
+#containerPara {
+    color: rgb(237, 237, 237);
+    margin-top: 12px;
+    margin-bottom: 62px;
+    font-size: 14px;
+}
+
+.container:hover {
+    box-shadow: 8px 8px 30px darkcyan;
+}
+
+select {
+    padding: 5px;
+    border-radius: 6px;
+
+}
+
+.hidden {
+    display: none;
+}
+
+.calculate-gpa {
+    margin-top: 20px;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: darkcyan;
+    border: 1px solid white;
+    color: white;
+    box-shadow: 0px 0px 4px white;
+}
+
+.calculate-gpa:hover {
+    background-color: white;
+    color: darkcyan;
+}
+
+.reset-btn {
+    padding: 8px;
+    border-radius: 8px;
+    background-color: darkcyan;
+    border: 1px solid white;
+    color: white;
+    box-shadow: 0px 0px 4px white;
+    margin-top: 25px;
+}
+
+.reset-btn:hover {
+    background-color: white;
+    color: darkcyan;
+}
+
+.inputs {
+    margin-top: 20px;
+
+}
+
+.course {
+    display: flex;
+
+}
+
+.addBtn {
+    background-color: darkcyan;
+    padding: 5px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid white;
+    margin-left: 6px;
+}
+
+.addBtn:hover {
+    background-color: white;
+    color: darkcyan;
+
+}
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-align: left;
+}
+
+h4 {
+    margin: 5px auto;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Mode */
+.theme {
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    margin: 0;
+    z-index: 1000;
+
+}
+
+.buttons {
+    margin-top: 15px;
+}
+
+.light-btn {
+    padding: 8px;
+    background-color: white;
+    color: darkcyan;
+    border: 1px solid darkcyan;
+    border-radius: 5px;
+}
+
+.dark-btn {
+    padding: 8px;
+    background-color: black;
+    color: rgb(0, 223, 223);
+    border: 1px solid darkcyan;
+    border-radius: 5px;
+}
+
