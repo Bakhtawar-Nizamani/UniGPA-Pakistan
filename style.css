@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-    width: 45%;
+    width: atuo;
     background-color: darkcyan;
     color: white;
     border-radius: 10px;
@@ -147,4 +147,74 @@ h4 {
     border: 1px solid darkcyan;
     border-radius: 5px;
 }
+
+
+@media screen and (max-width: 767px) {
+.theme {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .theme .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+ 
+    .container {
+        width: 92%;
+        max-width: 500px;
+        margin: 20px auto;
+        padding: 20px 15px;
+    }
+
+    .container h1 {
+        font-size: 28px;
+    }
+
+    .container h2 {
+        font-size: 22px;
+    }
+
+    #ChooseUni {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    /* Course row: sab kuch ek ke neeche ek */
+    .course {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .course input,
+    .course select,
+    .course button,
+    .grade,
+    .grade select {
+        width: 100%;
+    }
+
+    .calculate-gpa,
+    .reset-btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .academicSummary h3 {
+        font-size: 20px;
+    }
+
+    .academicSummary h4 {
+        font-size: 16px;
+    }
+}
+
+
+
 
